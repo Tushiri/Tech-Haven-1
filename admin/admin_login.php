@@ -41,6 +41,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
+   <?php include '../components/store_header.php'; ?>
    <div class="home-bg2">
       <?php
       if (isset($message)) {

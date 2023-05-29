@@ -90,6 +90,9 @@ section{
 .option-btn{
    background-color: #3e9ddc;
 }
+.option-btn2 {
+   background-color: black;
+}
 
 .delete-btn{
    background-color: var(--red);

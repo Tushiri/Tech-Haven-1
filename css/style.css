@@ -101,6 +101,9 @@ section{
 .option-btn{
    background-color: var(--orange);
 }
+.option-btn2 {
+   background-color: black;
+}
 
 .delete-btn{
    background-color: var(--red);

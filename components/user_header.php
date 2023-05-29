@@ -63,6 +63,7 @@ if (isset($message)) {
                <a href="user_register.php" class="option-btn">register</a>
                <a href="user_login.php" class="option-btn">login</a>
             </div>
+            <div><a href="admin/admin_login.php" class="option-btn">admin</a></div>
          <?php
          }
          ?>

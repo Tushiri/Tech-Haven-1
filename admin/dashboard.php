@@ -131,6 +131,8 @@ if (!isset($admin_id)) {
          </div>
 
       </div>
+      <a href="../home.php" class="btn" style="display: block; text-align: center; width: 100%; height:50px; margin-top: 50px;">Go Back To Store</a>
+
 
    </section>
 
