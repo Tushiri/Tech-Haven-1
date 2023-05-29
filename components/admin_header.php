@@ -15,17 +15,7 @@ if (isset($message)) {
 
    <section class="flex">
 
-      <a href="../admin/dashboard.php" class="logo">Admin</a>
-
-      <nav class="navbar">
-         <a href="../admin/dashboard.php">HOME</a>
-         <a href="../admin/products.php">PRODUCTS</a>
-         <a href="../admin/placed_orders.php">ORDERS</a>
-         <a href="../admin/admin_accounts.php">ADMINS</a>
-         <a href="../admin/users_accounts.php">USERS</a>
-         <a href="../admin/messages.php">MESSAGES</a>
-      </nav>
-
+      <a href="../admin/dashboard.php" class="logo">Admin Dashboard</a>
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="user-btn" class="fas fa-user"></div>
