@@ -8,7 +8,8 @@ if (isset($_SESSION['user_id'])) {
    $user_id = $_SESSION['user_id'];
 } else {
    $user_id = '';
-};
+}
+;
 
 if (isset($_POST['submit'])) {
 
@@ -75,11 +76,16 @@ if (isset($_POST['submit'])) {
          <form action="" method="post">
             <h3>update now</h3>
             <input type="hidden" name="prev_pass" value="<?= $fetch_profile["password"]; ?>">
-            <input type="text" name="name" required placeholder="Enter Your Username" maxlength="20" class="box" value="<?= $fetch_profile["name"]; ?>">
-            <input type="email" name="email" required placeholder="Enter Your Email" maxlength="50" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="<?= $fetch_profile["email"]; ?>">
-            <input type="password" name="old_pass" placeholder="Enter Your Old Password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="new_pass" placeholder="Enter Your New Password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="cpass" placeholder="Confirm Your New Password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="text" name="name" required placeholder="Enter Your Username" maxlength="20" class="box"
+               value="<?= $fetch_profile["name"]; ?>">
+            <input type="email" name="email" required placeholder="Enter Your Email" maxlength="50" class="box"
+               oninput="this.value = this.value.replace(/\s/g, '')" value="<?= $fetch_profile["email"]; ?>">
+            <input type="password" name="old_pass" placeholder="Enter Your Old Password" maxlength="20" class="box"
+               oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="new_pass" placeholder="Enter Your New Password" maxlength="20" class="box"
+               oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="cpass" placeholder="Confirm Your New Password" maxlength="20" class="box"
+               oninput="this.value = this.value.replace(/\s/g, '')">
             <input type="submit" value="update now" class="btn" name="submit">
          </form>
 

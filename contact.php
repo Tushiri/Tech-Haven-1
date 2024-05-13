@@ -8,7 +8,8 @@ if (isset($_SESSION['user_id'])) {
    $user_id = $_SESSION['user_id'];
 } else {
    $user_id = '';
-};
+}
+;
 
 if (isset($_POST['send'])) {
 
@@ -70,8 +71,12 @@ if (isset($_POST['send'])) {
          </div>
 
          <div class="content">
-            <h3>Why Choose Us?</h3>
-            <p>Choose Tech Haven for all your PC part needs! With an extensive selection of top-quality components, unbeatable prices, and a user-friendly website, we make it easy for you to build or upgrade your computer. Rest assured, your security is our priority, and our reliable shipping ensures swift delivery. Join our community of PC enthusiasts and experience exceptional performance. Shop with us at Tech Haven and unlock the power of your PC!</p>
+            <h3 style="color:white;">Why Choose Us?</h3>
+            <p style="color:white; font-size: 180%;">Choose Tech Haven for all your PC part needs! With an extensive selection of top-quality components,
+               unbeatable prices, and a user-friendly website, we make it easy for you to build or upgrade your
+               computer. Rest assured, your security is our priority, and our reliable shipping ensures swift delivery.
+               Join our community of PC enthusiasts and experience exceptional performance. Shop with us at Tech Haven
+               and unlock the power of your PC!</p>
             <a href="#contact" class="btn">contact us</a>
          </div>
 
@@ -89,7 +94,10 @@ if (isset($_POST['send'])) {
 
             <div class="swiper-slide slide">
                <img src="images/pic-2.png" alt="">
-               <p>Tech Haven exceeded my expectations! I ordered a CPU and RAM for my gaming rig, and I couldn't be happier with the products and service. The website was user-friendly, making it easy to find what I needed. The prices were competitive, and the shipping was fast. I highly recommend Tech Haven to anyone looking for quality PC parts. The</p>
+               <p>Tech Haven exceeded my expectations! I ordered a CPU and RAM for my gaming rig, and I couldn't be
+                  happier with the products and service. The website was user-friendly, making it easy to find what I
+                  needed. The prices were competitive, and the shipping was fast. I highly recommend Tech Haven to
+                  anyone looking for quality PC parts. The</p>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -102,7 +110,10 @@ if (isset($_POST['send'])) {
 
             <div class="swiper-slide slide">
                <img src="images/pic-2.png" alt="">
-               <p>I recently purchased a motherboard and SSD from Tech Haven, and I'm pleased with my experience. The selection of components was impressive, and I found exactly what I was looking for. The prices were reasonable, and the checkout process was smooth. My order arrived promptly, and the products were well-packaged. The only reason I'm </p>
+               <p>I recently purchased a motherboard and SSD from Tech Haven, and I'm pleased with my experience. The
+                  selection of components was impressive, and I found exactly what I was looking for. The prices were
+                  reasonable, and the checkout process was smooth. My order arrived promptly, and the products were
+                  well-packaged. The only reason I'm </p>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -115,7 +126,10 @@ if (isset($_POST['send'])) {
 
             <div class="swiper-slide slide">
                <img src="images/pic-1.png" alt="">
-               <p>Tech Haven is my go-to online store for PC parts. I've made multiple purchases, including a graphics card and power supply, and I've always been satisfied with the quality and service. The prices are competitive, and the website is easy to navigate. The customer support team is responsive and helpful whenever I had questions. I highly</p>
+               <p>Tech Haven is my go-to online store for PC parts. I've made multiple purchases, including a graphics
+                  card and power supply, and I've always been satisfied with the quality and service. The prices are
+                  competitive, and the website is easy to navigate. The customer support team is responsive and helpful
+                  whenever I had questions. I highly</p>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -128,7 +142,10 @@ if (isset($_POST['send'])) {
 
             <div class="swiper-slide slide">
                <img src="images/pic-2.png" alt="">
-               <p>I recently built a new PC and bought several components from Tech Haven, such as a CPU cooler and case fans. The products I received were of excellent quality, and I appreciated the reasonable prices. The shipping was fast, and everything arrived in perfect condition. The only improvement I would suggest is to have more variety in </p>
+               <p>I recently built a new PC and bought several components from Tech Haven, such as a CPU cooler and case
+                  fans. The products I received were of excellent quality, and I appreciated the reasonable prices. The
+                  shipping was fast, and everything arrived in perfect condition. The only improvement I would suggest
+                  is to have more variety in </p>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -173,7 +190,8 @@ if (isset($_POST['send'])) {
          <h3>get in touch</h3>
          <input type="text" name="name" placeholder="Your Name" required maxlength="20" class="box">
          <input type="email" name="email" placeholder="Your Email" required maxlength="50" class="box">
-         <input type="number" name="number" min="0" max="9999999999" placeholder="Your Number" required onkeypress="if(this.value.length == 10) return false;" class="box">
+         <input type="number" name="number" min="0" max="9999999999" placeholder="Your Number" required
+            onkeypress="if(this.value.length == 10) return false;" class="box">
          <textarea name="msg" class="box" placeholder="enter your message" cols="30" rows="10"></textarea>
          <input type="submit" value="send message" name="send" class="btn">
       </form>

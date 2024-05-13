@@ -68,17 +68,6 @@ if (isset($_POST['submit'])) {
 
    </section>
 
-
-
-
-
-
-
-
-
-
-
-
    <script src="../js/admin_script.js"></script>
 
 </body>

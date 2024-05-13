@@ -9,7 +9,8 @@ if (isset($_SESSION['user_id'])) {
 } else {
    $user_id = '';
    header('location:user_login.php');
-};
+}
+;
 
 if (isset($_POST['order'])) {
 
@@ -83,9 +84,13 @@ if (isset($_POST['order'])) {
                   $cart_items[] = $fetch_cart['name'] . ' (' . $fetch_cart['price'] . ' x ' . $fetch_cart['quantity'] . ') - ';
                   $total_products = implode($cart_items);
                   $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
-            ?>
-                  <p> <?= $fetch_cart['name']; ?> <span>(<?= '$' . $fetch_cart['price'] . '/- x ' . $fetch_cart['quantity']; ?>)</span> </p>
-            <?php
+                  ?>
+                  <p>
+                     <?= $fetch_cart['name']; ?> <span>(
+                        <?= '$' . $fetch_cart['price'] . '/- x ' . $fetch_cart['quantity']; ?>)
+                     </span>
+                  </p>
+                  <?php
                }
             } else {
                echo '<p class="empty">your cart is empty!</p>';
@@ -93,7 +98,9 @@ if (isset($_POST['order'])) {
             ?>
             <input type="hidden" name="total_products" value="<?= $total_products; ?>">
             <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-            <div class="grand-total">grand total : <span> ₱<?= $grand_total; ?>/-</span></div>
+            <div class="grand-total">grand total : <span> ₱
+                  <?= $grand_total; ?>/-
+               </span></div>
          </div>
 
          <h3>place your orders</h3>
@@ -105,7 +112,8 @@ if (isset($_POST['order'])) {
             </div>
             <div class="inputBox">
                <span>your number :</span>
-               <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+               <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999"
+                  onkeypress="if(this.value.length == 10) return false;" required>
             </div>
             <div class="inputBox">
                <span>your email :</span>
@@ -142,7 +150,8 @@ if (isset($_POST['order'])) {
             </div>
             <div class="inputBox">
                <span>pin code :</span>
-               <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+               <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999"
+                  onkeypress="if(this.value.length == 6) return false;" class="box" required>
             </div>
          </div>
 
@@ -151,18 +160,6 @@ if (isset($_POST['order'])) {
       </form>
 
    </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
    <?php include 'components/footer.php'; ?>
 

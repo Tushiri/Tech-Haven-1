@@ -41,14 +41,13 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-   <?php include '../components/store_header.php'; ?>
    <div class="home-bg2">
       <?php
-      if (isset($message)) {
-         foreach ($message as $message) {
-            echo '
-         <div class="message">
-            <span>' . $message . '</span>
+      if (isset($imessage)) {
+         foreach ((array) $message as $imessage) {
+            echo 
+         '<div class="message">
+            <span>' . $imessage . '</span>
             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
          </div>
          ';

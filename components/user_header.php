@@ -49,11 +49,6 @@ if (isset($message)) {
          ?>
             <p><?= $fetch_profile["name"]; ?></p>
             <a href="update_user.php" class="btn">update profile</a>
-            <div class="flex-btn">
-               <a href="user_register.php" class="option-btn">register</a>
-               <a href="user_login.php" class="option-btn">login</a>
-            </div>
-            <a href="admin/admin_login.php" class="btn">Login Admin</a>
             <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a>
          <?php
          } else {
@@ -63,7 +58,7 @@ if (isset($message)) {
                <a href="user_register.php" class="option-btn">register</a>
                <a href="user_login.php" class="option-btn">login</a>
             </div>
-            <div><a href="admin/admin_login.php" class="option-btn">admin</a></div>
+            <div><a href="admin/admin_login.php" class="option-btn">admin login</a></div>
          <?php
          }
          ?>
